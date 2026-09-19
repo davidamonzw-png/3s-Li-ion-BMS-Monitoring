@@ -45,11 +45,25 @@ Battery parameters are displayed locally on a 16×2 I²C LCD and transmitted to 
 
 Battery Pack → 3S BMS → Voltage & Temperature Sensing → ESP32 → LCD / LEDs / Blynk IoT
 
+![System Architecture Diagram](images/BMS SYS_CHITECTRE.jpeg)
+
+### Circuit Schematic
+![Circuit Wiring Schematic](images/BMS UPDATED SCHEMATIC.JPEG)
+
 ## Testing & Validation
 
 The ESP32 voltage measurement was compared with a multimeter reading at the battery output to validate the voltage-sensing system.
 
 The Blynk dashboard was also tested for real-time parameter updates and programmed push notifications.
+
+### Hardware Verification & Calibration
+![Digital Multimeter Voltage Verification](images/Verification Meter reading.JPEG)
+
+### Blynk IoT Monitoring Workspace
+![Blynk Cloud Dashboard Workspace](images/blynk dashboard.png)
+
+### Automated Event Alerts & Push Notifications
+![Blynk System Push Notifications](images/bms push notifications.jpeg)
 
 ## Current Limitation
 
@@ -62,3 +76,5 @@ The present battery percentage estimation is voltage-based and does not use coul
 - Improve state-of-charge estimation
 - Add cell-level voltage monitoring
 - Improve data logging and battery performance analysis
+
+
